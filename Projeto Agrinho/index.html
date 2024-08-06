@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do Campo à Cidade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Do Campo à Cidade: Colhendo Oportunidades</h1>
+        <nav>
+            <ul>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#agricultores">Agricultores</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="produtos">
+        <h2>Produtos Disponíveis</h2>
+        <div class="produto">
+            <div class="produto-info">
+                <h3>Tomate Orgânico</h3>
+                <p>Produtor: Fazenda Boa Terra</p>
+                <p><a href="#contato" class="pedido">Fazer Pedido</a></p>
+            </div>
+            <img src="imagens/tomate.jpg" alt="Tomate Orgânico">
+        </div>
+
+        <div class="produto">
+            <div class="produto-info">
+                <h3>Cenoura Híbrida</h3>
+                <p>Produtor: Fazenda Boa Terra</p>
+                <p><a href="#contato" class="pedido">Fazer Pedido</a></p>
+            </div>
+            <img src="imagens/cenoura.jpg" alt="Cenoura Híbrida">
+        </div>
+        
+        <div class="produto">
+            <div class="produto-info">
+                <h3>Batata Asterix</h3>
+                <p>Produtor: Fazenda Boa Terra</p>
+                <p><a href="#contato" class="pedido">Fazer Pedido</a></p>
+            </div>
+            <img src="imagens/batata.jpg" alt="Batata Asterix">
+        </div>
+
+        <div class="produto">
+            <div class="produto-info">
+                <h3>Alface Hidropônica</h3>
+                <p>Produtor: Horta Verde Vida</p>
+                <p><a href="#contato" class="pedido">Fazer Pedido</a></p>
+            </div>
+            <img src="imagens/alface.jpg" alt="Alface Hidropônica">
+        </div>
+
+        <div class="produto">
+            <div class="produto-info">
+                <h3>Espinafre da Holanda</h3>
+                <p>Produtor: Horta Verde Vida</p>
+                <p><a href="#contato" class="pedido">Fazer Pedido</a></p>
+            </div>
+            <img src="imagens/espinafre.jpg" alt="Espinafre da Holanda">
+        </div>
+
+        <div class="produto">
+            <div class="produto-info">
+                <h3>Rúcula antonella</h3>
+                <p>Produtor: Horta Verde Vida</p>
+                <p><a href="#contato" class="pedido">Fazer Pedido</a></p>
+            </div>
+            <img src="imagens/Rucula.jpg" alt="Rúcula antonella">
+        </div>
+
+        
+
+    </section>
+
+    <section id="agricultores">
+        <h2>Agricultores</h2>
+        <div class="agricultor">
+            <h3>Fazenda Boa Terra</h3>
+            <p>Localização: Zona Rural, Londrina (PR)</p>
+            <p>Especialidades: Tomate, Cenoura, Batata</p>
+        </div>
+        <div class="agricultor">
+            <h3>Horta Verde Vida</h3>
+            <p>Localização: Zona Rural, Dourados (MS)</p>
+            <p>Especialidades: Alface, Espinafre, Rúcula</p>
+        </div>
+        
+    </section>
+
+    <section id="contato">
+        <h2>Contato</h2>
+        <p>Para mais informações, entre em contato conosco pelo email: docampoacidade@contato.com</p>
+    </section>
+</body>
+</html>
+
+<section id="pedido-form">
+    <h2>Faça Seu Pedido</h2>
+    <form action="enviar_pedido.html" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="produto">Produto:</label>
+        <select id="produto" name="produto">
+            <option value="tomate">Tomate Orgânico</option>
+            <option value="cenoura">Cenoura Híbrida</option>
+            <option value="batata">Batata Asterix</option>
+            <option value="alface">Alface Hidropônica</option>
+            <option value="espinafre">Espinafre da Holanda</option>
+            <option value="rucula">Rúcula antonella</option>
+            
+        </select>
+
+        <button type="submit">Enviar Pedido</button>
+    </form>
+</section>
+
